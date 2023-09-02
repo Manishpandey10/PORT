@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manish</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap"
+        rel="stylesheet">
+
+        
+</head>
+
+
+<body>
+    <script src="index.js"></script>
+    <header>
+        <nav>
+            <div class="left">Manish Pandey</div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href='contactme.html'>My Socials</a>
+                    </li>
+                    <li>
+                    <div class="download">Download</div>
+                </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="firstsection">
+            <div class="leftside">
+                Hi, My name is <span class="purple"> Manish </span>
+                <div>and i am a </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightside">
+                <img src="IMG_4011-min.JPG" alt="Right Side Picture">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What have i made so far</span>
+            <h1>My Projects </h1>
+            <div class="box">
+                <div class="vertical">
+                    <img src="Tictactoe.jpg" alt="" class="image-top">
+                    <div class="vertical-title">Tic-Tac-Toe Game </div>
+                    <div class="vertical-desc">Created a fun and a interactive game "Tic Tac Toe Game" using HTML , CSS
+                        and javascript </div>
+                </div>
+                <div class="vertical">
+                    <img src="logo12.jpg" alt="" class="image-two">
+                    <div class="vertical-title2">Image Search Webapp </div>
+                    <div class="vertical-desc1">Simple Web Application made using HTML, CSS, Jvascript and Used api for
+                        searching image which was provided by Unsplash (unsplash developer)</div>
+                </div>
+                <div class="vertical">
+                    <img src="weather-2019-02-07.png" alt="" class="image-three">
+                    <div class="vertical-title3">Weather Information </div>
+                    <div class="vertical-desc2">Created a web application which shows the weather information of desired
+                        city. Tech stack used - HTML, CSS, javascript. API provided by RapidAPI</div>
+                </div>
+                <div class="vertical">
+                    <img src="long.png" alt="" class="image-four">
+                    <div class="vertical-title4"> Portfolio </div>
+                    <div class="vertical-desc3">Created My own Portfolio website , the one you are on right now ! :)
+                    </div>
+                </div>
+
+        </section>
+        <section class="thirdsection">
+            <div class="new">
+                <span id="element4"></span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Manish Pandey's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                You can contact me anytime through my social
+            </div>
+            <div class="footer-third">
+                open for suggestion all the time
+            </div>
+            <div class="footer-fourth">
+                see you next time ;) </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+
+        var typed = new Typed('#element', {
+            strings: ['Web developer', 'Video editor', 'Photographer', 'Gamer and', ' A Human of course!!'],
+            typeSpeed: 50,
+            loop:true
+        });
+        var typed = new Typed('#element4', {
+            strings: ['New projects added check out on my Github '],
+            typeSpeed: 50,
+            delay:100,
+            loop:true
+        });
+
+        // this is for the downaload my cv button lets see how it goes
+        const downloadButton = document.querySelector('.download');
+
+downloadButton.addEventListener('click', () => {
+  // Get the file to download.
+  const file = 'ManishPandey_2.pdf';
+  downloadButton.style.backgroundColor='rgb(40, 49, 95)';
+  downloadButton.style.color='#CE92DC'
+
+  // Create a download link element.
+  const a = document.createElement('a');
+  a.href = file;
+  a.download = file;
+
+  // Append the download link element to the body.
+  document.body.appendChild(a);
+
+  // Click on the download link element to download the file.
+  a.click();
+});
+
+    </script>
+</body>
+
+</html>

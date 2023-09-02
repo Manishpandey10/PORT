@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manish</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+    <script src="index.js"></script>
+    <nav>
+        <div class="left">Welcome </div>
+        <div class="right">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contactme.html">My Socials</a>
+                </li>
+                <li>
+                    <div class="download">Download</div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="paragraph">
+        <div class="para">
+            <span id="idparagraph1">Hey visitor, i am glad that you are here,
+                Let me introduce about myself, I am Manish , a Software engineering graduated , graduated from
+                Uttarakhand Technical
+                University, Dehradun.loves to learn something new everyday.
+                <div id="element3"></div>
+            </span>
+
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+    <script>
+
+        //TYPE ANIMATION 
+
+        var typed = new Typed('#element3', {
+            strings: ['If you want to check more about me Go to My socials Tab and visit me there ;)'],
+            typeSpeed: 50,
+            delay: 100,
+            loop:true
+        });
+
+        //download button works here tooo wohoooo i guess'
+
+        const downloadButton = document.querySelector('.download');
+
+        downloadButton.addEventListener('click', () => {
+            // Get the file to download.
+            const file = 'ManishPandey_2.pdf';
+            downloadButton.style.backgroundColor = 'rgb(40, 49, 95)';
+            downloadButton.style.color = '#CE92DC'
+
+            // Create a download link element.
+            const a = document.createElement('a');
+            a.href = file;
+            a.download = file;
+
+            // Append the download link element to the body.
+            document.body.appendChild(a);
+
+            // Click on the download link element to download the file.
+            a.click();
+        });
+    </script>
+
+</body>
+
+</html>
