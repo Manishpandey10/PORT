@@ -9,5 +9,6 @@ Installation
 To install this project, you will need the following:
 1. Clone this repository.
 2. run through your IDE.
-   ALways open for suggestions and if you can please tell me how i can make improvements in this and Thank you for that in advance .
+   
+ALways open for suggestions and if you can please tell me how i can make improvements in this and Thank you for that in advance .
 i will be adding more features/ interactiveness into this website stay tuned
