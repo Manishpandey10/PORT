@@ -12,3 +12,4 @@ To install this project, you will need the following:
    
 ALways open for suggestions and if you can please tell me how i can make improvements in this and Thank you for that in advance .
 i will be adding more features/ interactiveness into this website stay tuned
+* I actually have not added my Pictures and files of "resume" in this repo. You can add your own and Feel Free to use it as a Template
